@@ -18,7 +18,7 @@
 <body>
   <div class='container'>
     <div>
-      <button class='save' class='mainB'><img src="./images/bookmark.png" hight='35px' width='15px'>Saved
+      <button class='saveA' class='mainB'><img src="./images/bookmark.png" hight='35px' width='15px'>Saved
         Words</button>
       <button type="button" class="collapsible, mainB" id='mainC'><img src="./images/lock.png" hight='35px'
           width='15px'>Log
@@ -78,14 +78,34 @@
                 <option value="French">French</option>
                 <option value="Japanese">Japanese</option>
                 <option value="Spanish">Spanish</option>
+                <option value="Spanish">Spanish</option>
               </select>
 
 
         </form>
       </div>
-      <button class='mainB'><img src="./images/search.png" hight='35px' width='15px'>Search</button>
+      <button class='mainB, mainS' id='search1'><img src="./images/search.png" hight='35px' width='15px'>Search</button>
   </div>
 
+  <div class="row">
+    <div class="card medium">
+      <div class="card">
+        <div class="card-image">
+          <img class='image' src="images/sample-1.jpg">
+          <span class="card-title"></span>
+          <button class="save"><i class="material-icons"><img src="./images/heart.png" hight='45px'
+                width='25px'></i></button>
+          <button class="speaker"><i class="material-icons"><img src="./images/speaker.png" hight='45px'
+                width='25px'></i></button>
+        </div>
+        <div class="card-content">
+          <p class='info'>
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script>
@@ -107,30 +127,8 @@
       myClasses[0].style.display = 'block';
 
     });
-    // document.getElementsByClassName("content").style.display = 'none';
-    // var coll = document.getElementsByClassName("collapsible");
-    // var i;
 
-    // for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener("click", function () {
-    //     this.classList.toggle("active");
-    //     var content = this.nextElementSibling;
-    //     if (content.style.display === "block") {
-    //       content.style.display = "none";
-    //     } else {
-    //       content.style.display = "block";
-    //     }
-    //   });
-    // }
 
-    // document.addEventListener('DOMContentLoaded', function () {
-    //   var elems = document.querySelectorAll('.dropdown-trigger');
-    //   var instances = M.Dropdown.init(elems, options);
-    // });
-
-    // Or with jQuery
-
-    //$('.dropdown-trigger').dropdown();
 
   </script>
 
