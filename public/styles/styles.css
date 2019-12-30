@@ -1,3 +1,91 @@
 .list-group-item {
-  line-height: 2.5;
+	line-height: 2.5;
+}
+body {
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 24%, rgba(29, 189, 161, 1) 63%);
+}
+
+.hero {
+	float: center;
+	/* margin-left: 350px; */
+}
+.title {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 75px;
+	color: #f29909;
+}
+#title {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 75px;
+	color: #f29909;
+}
+.collapsible,
+.content,
+.save {
+	margin-left: 1200px;
+	font-family: 'Indie Flower', cursive;
+}
+.mainB {
+	background-color: white;
+	/* color: #f29909; */
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+}
+.content {
+	background-color: #61cd20;
+	color: white;
+}
+.singIn {
+	font-family: 'Indie Flower', cursive;
+}
+.dropdown-item,
+.validate,
+.text {
+	color: white;
+	font-family: 'Indie Flower', cursive;
+}
+
+.singup {
+	float: center;
+}
+.validate {
+	margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-size: 15px;
+}
+
+.submit {
+	margin-left: 650px;
+}
+.text {
+	margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-size: 15px;
+}
+.text2 {
+	font-size: 25px;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	margin-left: 350px;
+}
+.word {
+	margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+}
+#myList {
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+}
+#myList,
+#input_text {
+	display: inline-block;
+}
+
+.mainB {
+	float: right;
 }
