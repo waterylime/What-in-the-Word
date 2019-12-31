@@ -28,7 +28,7 @@
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "windows"
         ],
         "quotes": [
             "error",
@@ -39,5 +39,6 @@
             "always"
         ],
         "prettier/prettier": "error"
-    }
+    },
+    "parser": "babel-eslint"
 }
