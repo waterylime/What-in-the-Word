@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
   <link
     href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Gloria+Hallelujah|Gochi+Hand|Indie+Flower|Press+Start+2P|Shadows+Into+Light&display=swap"
     rel="stylesheet">
@@ -44,7 +46,7 @@
           <button type="submit" class="btn btn-primary, singIn">Sign in</button>
           </form>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href='./singup.html'>New around here? Sign up</a>
+          <a class="dropdown-item" href='/signup'>New around here? Sign up</a>
           <br>
           <a class="dropdown-item" href='./forget.html'>Forgot password?</a>
       </div>
@@ -86,59 +88,8 @@
       <button class='mainB'><img src="./images/search.png" hight='35px' width='15px'>Search</button>
   </div>
 
+  <script src="js/index.js"></script>
 
-
-  <script>
-    var myClasses = document.querySelectorAll('.content'),
-      i = 0,
-      l = myClasses.length;
-
-    for (i; i < l; i++) {
-      myClasses[i].style.display = 'none';
-    }
-
-
-    let button = document.querySelector("#mainC");
-
-    button.addEventListener("click", () => {
-      console.log("Button clicked.");
-
-
-      myClasses[0].style.display = 'block';
-
-    });
-    // document.getElementsByClassName("content").style.display = 'none';
-    // var coll = document.getElementsByClassName("collapsible");
-    // var i;
-
-    // for (i = 0; i < coll.length; i++) {
-    //   coll[i].addEventListener("click", function () {
-    //     this.classList.toggle("active");
-    //     var content = this.nextElementSibling;
-    //     if (content.style.display === "block") {
-    //       content.style.display = "none";
-    //     } else {
-    //       content.style.display = "block";
-    //     }
-    //   });
-    // }
-
-    // document.addEventListener('DOMContentLoaded', function () {
-    //   var elems = document.querySelectorAll('.dropdown-trigger');
-    //   var instances = M.Dropdown.init(elems, options);
-    // });
-
-    // Or with jQuery
-
-    //$('.dropdown-trigger').dropdown();
-
-  </script>
-
-
-
-
-
-  <script scr='script.js'></script>
 </body>
 
 </html>
