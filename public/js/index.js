@@ -50,3 +50,27 @@ $(document).ready(function() {
     });
   }
 });
+
+let artyom = new Artyom();
+let word = $(this).attr(".card-title").text()
+console.log (word)
+function startArtyom(){
+    artyom.initialize({
+        language: "en-GB", 
+        continuous: false, 
+        debug: true, 
+        listen: true
+    })
+
+};
+
+function say(){
+    artyom.say($(this).attr(".card-title").text());
+};
+
+$(".speaker").click(function(){
+  console.log(word);
+  console.log("clicked");
+  startArtyom();
+  say();
+})
