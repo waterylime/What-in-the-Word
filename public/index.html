@@ -16,127 +16,132 @@
 
 
 <body>
+  <button class='saveA' class='mainB'><img src="./images/bookmark.png" hight='35px' width='15px'>Saved
+    Words</button>
+
+
+  <label class="dropdown">
+
+    <div class="dd-button"><img src="./images/lock.png" hight='35px' width='15px'>
+      Login
+    </div>
+
+    <input type="checkbox" class="dd-input" id="test">
+
+    <ul class="dd-menu">
+      <label for="exampleDropdownFormEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+      <br>
+      <label for="exampleDropdownFormPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+      <label class="form-check-label" for="dropdownCheck">
+        Remember me
+      </label>
+      <button type="submit" class="btn btn-primary, singIn">Sign in</button>
+      <br>
+      <a class="dropdown-item" href='./singup.html'>New around here? Sign up</a>
+      <br>
+      <a class="dropdown-item" href='./forget.html'>Forgot password?</a>
+    </ul>
+  </label>
+
+
   <div class='container'>
+    <section class="hero is-primary is-medium">
+      <div class="hero">
+        <div class="container">
+          <h1 class="title">
+            WhAt iN tHe WoRd
+          </h1>
+        </div>
+      </div>
+
+    </section>
     <div>
-      <button class='saveA' class='mainB'><img src="./images/bookmark.png" hight='35px' width='15px'>Saved
-        Words</button>
-      <button type="button" class="collapsible, mainB" id='mainC'><img src="./images/lock.png" hight='35px'
-          width='15px'>Log
-        In</button>
-      <div class="content">
-        <p>
-          <div class="form-group">
-            <label for="exampleDropdownFormEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+
+      <div>
+        <h1>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="input_text" placeholder="word" class='word' type="text">
+                  <label for="input_text"></label>
+
+
+                  <select id="myList">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Spanish">Icelandic</option>
+                  </select>
+
+
+            </form>
           </div>
-          <div class="form-group">
-            <label for="exampleDropdownFormPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="dropdownCheck">
-              <label class="form-check-label" for="dropdownCheck">
-                Remember me
-              </label>
+          <button class='mainB, mainS' id='search1'><img src="./images/search.png" hight='35px'
+              width='15px'>Search</button>
+      </div>
+
+      <div class="row">
+        <div class="card medium">
+          <div class="card">
+            <div class="card-image">
+              <img class='image' src="images/sample-1.jpg">
+              <span class="card-title"></span>
+              <button class="save"><i class="material-icons"><img src="./images/heart.png" hight='45px'
+                    width='25px'></i></button>
+              <button class="speaker"><i class="material-icons"><img src="./images/speaker.png" hight='45px'
+                    width='25px'></i></button>
+            </div>
+            <div class="card-content">
+              <p class='info'>
+
+              </p>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary, singIn">Sign in</button>
-          </form>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href='./singup.html'>New around here? Sign up</a>
-          <br>
-          <a class="dropdown-item" href='./forget.html'>Forgot password?</a>
-      </div>
-      </p>
-
-    </div>
-  </div>
-  <section class="hero is-primary is-medium">
-    <div class="hero">
-      <div class="container">
-        <h1 class="title">
-          WhAt iN tHe WoRd
-        </h1>
-      </div>
-    </div>
-
-  </section>
-
-  <div>
-    <h1>
-      <div class="row">
-        <form class="col s12">
-          <div class="row">
-            <div class="input-field col s6">
-              <input id="input_text" placeholder="word" class='word' type="text">
-              <label for="input_text"></label>
-
-
-              <select id="myList">
-                <option value="English">English</option>
-                <option value="French">French</option>
-                <option value="Japanese">Japanese</option>
-                <option value="Spanish">Spanish</option>
-                <option value="Spanish">Spanish</option>
-              </select>
-
-
-        </form>
-      </div>
-      <button class='mainB, mainS' id='search1'><img src="./images/search.png" hight='35px' width='15px'>Search</button>
-  </div>
-
-  <div class="row">
-    <div class="card medium">
-      <div class="card">
-        <div class="card-image">
-          <img class='image' src="images/sample-1.jpg">
-          <span class="card-title"></span>
-          <button class="save"><i class="material-icons"><img src="./images/heart.png" hight='45px'
-                width='25px'></i></button>
-          <button class="speaker"><i class="material-icons"><img src="./images/speaker.png" hight='45px'
-                width='25px'></i></button>
-        </div>
-        <div class="card-content">
-          <p class='info'>
-
-          </p>
         </div>
       </div>
-    </div>
-  </div>
 
 
-  <script>
-    var myClasses = document.querySelectorAll('.content'),
-      i = 0,
-      l = myClasses.length;
+      <script>
+        var myClasses = document.querySelectorAll('.content'),
+          i = 0,
+          l = myClasses.length;
 
-    for (i; i < l; i++) {
-      myClasses[i].style.display = 'none';
-    }
-
-
-    let button = document.querySelector("#mainC");
-
-    button.addEventListener("click", () => {
-      console.log("Button clicked.");
+        for (i; i < l; i++) {
+          myClasses[i].style.display = 'none';
+        }
 
 
-      myClasses[0].style.display = 'block';
+        let button = document.querySelector("#mainC");
 
-    });
-
-
-
-  </script>
+        button.addEventListener("click", () => {
+          console.log("Button clicked.");
 
 
+          if (myClasses[0].style.display === "none") {
+            myClasses[0].style.display = "block";
+          } else {
+            myClasses[0].style.display = "none";
+          }
+
+
+          // myClasses[0].style.display = 'block';
+
+        });
 
 
 
-  <script scr='script.js'></script>
+      </script>
+
+
+
+
+
+      <script scr='script.js'></script>
 </body>
 
 </html>
