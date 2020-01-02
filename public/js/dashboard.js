@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $.get("/api/dashboard").then(function(data) {
     $(".member-name").text(data.email);
-    $(".mainB").on("click", function(event) {
+    $("#search-btn").on("click", function(event) {
       event.preventDefault();
       var selectedLang = $("#myList :selected").text();
       console.log(selectedLang);

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".mainB").on("click", function(event) {
+  $("#search-button").on("click", function(event) {
     event.preventDefault();
     var selectedLang = $("#myList :selected").text();
     console.log(selectedLang);

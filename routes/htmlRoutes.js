@@ -11,9 +11,9 @@ module.exports = function(app) {
   });
 
   app.get("/signup", function(req, res) {
-    if (req.user) {
-      res.redirect("/dashboard");
-    }
+    // if (req.user) {
+    //   res.redirect("/dashboard");
+    // }
     res.sendFile(path.join(__dirname, "../public/signup.html"));
   });
 
