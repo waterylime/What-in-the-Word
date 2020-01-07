@@ -52,8 +52,6 @@ $(document).ready(function() {
 });
 
 let artyom = new Artyom();
-let word = $(this).attr(".card-title").text()
-console.log (word)
 function startArtyom(){
     artyom.initialize({
         language: "en-GB", 
@@ -64,13 +62,34 @@ function startArtyom(){
 
 };
 
-function say(){
-    artyom.say($(this).attr(".card-title").text());
-};
+// function say(){
+//     artyom.say();
+// };
 
 $(".speaker").click(function(){
+  // let word = String($(this).text())
+  let word = String($(this).parents(".card-content").siblings(".card-image").children(".card-title").text())
   console.log(word);
   console.log("clicked");
   startArtyom();
-  say();
-})
+  artyom.say(word);
+  // say();
+
+});
+
+
+
+
+$(".mainB").click(function(){
+var query = $("#input_text").val();
+console.log(query)
+var queryUrl = "https://www.googleapis.com/customsearch/v1?q=" + query + "&cx=008178743786087981107:hpgckvpylnl&searchType=image&key=AIzaSyDXVQjXJ6f75Uw8GzUsbFCMh2oqzge56TQ"
+$.ajax({
+    url:queryUrl,
+    method: "GET",
+}).then(function(response) {
+    console.log(response.items[0].link)
+   
+
+});
+});
