@@ -12,20 +12,11 @@ header {
 	height: 50px;
 	box-shadow: 0 0 15px 0 rgb(71, 45, 218);
 }
-
-<<<<<<< Updated upstream
-.hero {
-	float: center;
-	/* margin-left: 350px; */
-=======
 header li {
 	float: right;
 	margin-right: 30px;
 	list-style-type: none;
-	
->>>>>>> Stashed changes
 }
-
 header li a, .member-name {
 	text-decoration: none;
 	display: inline-block;
@@ -40,39 +31,7 @@ header li a:hover {
 .title {
 	font-family: 'Fredericka the Great', cursive;
 	font-size: 75px;
-<<<<<<< Updated upstream
-	color: #f29909;
-}
-.collapsible,
-.content,
-.save {
-	margin-left: 1200px;
-	font-family: 'Indie Flower', cursive;
-}
-.mainB {
-	background-color: white;
-	/* color: #f29909; */
-	font-family: 'Indie Flower', cursive;
-	font-size: 15px;
-}
-.content {
-	background-color: #61cd20;
-	color: white;
-}
-.singIn {
-	font-family: 'Indie Flower', cursive;
-}
-.dropdown-item,
-.validate,
-.text {
-	color: black;
-	font-family: 'Indie Flower', cursive;
-=======
-	color: #eb5814; 
-	margin-left: 15px;
->>>>>>> Stashed changes
-}
-
+  
 .word {
 	margin-left: 250px;
 	width: 400px;
@@ -114,8 +73,6 @@ header li a:hover {
 	color: white;
 	box-shadow: 0 0 5px 5px rgb(66, 35, 243);
 }
-<<<<<<< Updated upstream
-=======
 
 .image {
 	float: right;
@@ -161,7 +118,6 @@ h4 {
 	border-radius: 5px;
 	padding: 5px;
 }
-
 .btn {
 	position: absolute;
 	margin: 140px 100px  15px;
@@ -224,7 +180,3 @@ body.signup {
 	box-shadow: 0 0 15px 0 rgb(71, 45, 218);
 	margin-left: 20px;
   }
-
-
-
->>>>>>> Stashed changes
