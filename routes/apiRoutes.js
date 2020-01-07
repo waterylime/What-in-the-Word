@@ -28,9 +28,49 @@ module.exports = function(app) {
     if (!req.user) {
       res.json({});
     } else {
+<<<<<<< Updated upstream
       res.json({
         email: req.user.email,
         id: req.user.id
+=======
+      db.Word.findAll({
+        where: {
+          id: req.user.id
+        }
+      })
+        .then(function(data) {
+          res.json(data);
+        })
+        .catch(function(err) {
+          res.status(401).json(err);
+        });
+    }
+  });
+
+  app.post("/api/dashboard", function(req, res) {
+    if (req.user) {
+      db.Word.create({
+        name: req.body.name,
+        language: req.body.language,
+        description: req.body.description,
+        image: req.body.image
+      })
+        .then(function(response) {
+          res.json(response);
+        })
+        .catch(function(err) {
+          res.status(401).json(err);
+        });
+    }
+  });
+
+  app.delete("/api/dashboard/:id", function(req, res) {
+    if (req.user) {
+      db.Word.destroy({
+        where: { id: req.params.id }
+      }).then(function(response) {
+        res.json(response);
+>>>>>>> Stashed changes
       });
     }
   });
