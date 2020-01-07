@@ -62,16 +62,19 @@ function startArtyom(){
 
 };
 
-function say(){
-    artyom.say();
-};
+// function say(){
+//     artyom.say();
+// };
 
 $(".speaker").click(function(){
-  let word = $(this).text().stringify()
+  // let word = String($(this).text())
+  let word = String($(this).parents(".card-content").siblings(".card-image").children(".card-title").text())
   console.log(word);
   console.log("clicked");
   startArtyom();
-  say();
+  artyom.say(word);
+  // say();
+
 });
 
 
