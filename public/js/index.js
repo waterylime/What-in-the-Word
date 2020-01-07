@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".mainB").on("click", function(event) {
+  $("#search1").on("click", function(event) {
     event.preventDefault();
     var selectedLang = $("#myList :selected").text();
     console.log(selectedLang);
@@ -29,6 +29,7 @@ $(document).ready(function() {
       "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" +
       query +
       "?key=3634fd55-b777-4316-b6a6-070f3b29b843";
+    console.log(queryURL);
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -50,7 +51,6 @@ $(document).ready(function() {
     });
   }
 });
-
 let artyom = new Artyom();
 function startArtyom(){
     artyom.initialize({
@@ -77,9 +77,6 @@ $(".speaker").click(function(){
 
 });
 
-
-
-
 $(".mainB").click(function(){
 var query = $("#input_text").val();
 console.log(query)
@@ -89,7 +86,5 @@ $.ajax({
     method: "GET",
 }).then(function(response) {
     console.log(response.items[0].link)
-   
-
 });
 });
