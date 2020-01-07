@@ -6,7 +6,7 @@ body {
 }
 
 .hero {
-	float: center;
+	/* float: center; */
 	/* margin-left: 350px; */
 }
 .title {
@@ -20,9 +20,9 @@ body {
 	color: #f29909;
 }
 .collapsible,
-.content,
+.dropdown,
 .save {
-	margin-left: 1200px;
+	margin-left: 1000px;
 	font-family: 'Indie Flower', cursive;
 }
 .mainB {
@@ -31,9 +31,9 @@ body {
 	font-family: 'Indie Flower', cursive;
 	font-size: 15px;
 }
-.content {
+.dropdown {
 	background-color: #61cd20;
-	color: white;
+	color: black;
 }
 .singIn {
 	font-family: 'Indie Flower', cursive;
@@ -88,4 +88,107 @@ body {
 
 .mainB {
 	float: right;
+}
+
+.mainS {
+	margin-right: 230px;
+	float: right;
+	background-color: white;
+	/* color: #f29909; */
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+}
+
+.card {
+	background-color: white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+	margin-top: 55px;
+}
+
+.saveA {
+	background-color: white;
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+	float: right;
+	margin-left: 25px;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+
+.dd-button {
+	display: inline-block;
+	border: 1px solid gray;
+	border-radius: 4px;
+	padding: 10px 30px 10px 20px;
+	background-color: #ffffff;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.dd-button:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid black;
+}
+
+.dd-button:hover {
+	background-color: #eeeeee;
+}
+
+.dd-input {
+	display: none;
+}
+
+.dd-menu {
+	position: absolute;
+	top: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0;
+	margin: 2px 0 0 0;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	list-style-type: none;
+	width: 200px;
+	height: 144px;
+}
+
+.dd-input + .dd-menu {
+	display: none;
+}
+
+.dd-input:checked + .dd-menu {
+	display: block;
+}
+
+.dd-menu li {
+	padding: 10px 20px;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.dd-menu li:hover {
+	background-color: #f6f6f6;
+}
+
+.dd-menu li a {
+	display: block;
+	margin: -10px -20px;
+	padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+	padding: 0;
+	border-bottom: 1px solid #cccccc;
 }
