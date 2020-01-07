@@ -51,7 +51,9 @@ $(document).ready(function() {
     });
   }
 });
-let artyom = new Artyom();
+
+
+var artyom = new Artyom();
 function startArtyom(){
     artyom.initialize({
         language: "en-GB", 
