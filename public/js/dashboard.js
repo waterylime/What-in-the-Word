@@ -1,14 +1,8 @@
 $(document).ready(function() {
-<<<<<<< Updated upstream
-  $.get("/api/dashboard").then(function(data) {
-    $(".member-name").text(data.email);
-    $("#search-btn").on("click", function(event) {
-=======
   $.get("/api/dashboard").then(function() {
     // $("#user-name").text(data.email);
     $("#search1").on("click", function(event) {
       console.log("submit");
->>>>>>> Stashed changes
       event.preventDefault();
       var selectedLang = $("#myList :selected").text();
       console.log(selectedLang);
