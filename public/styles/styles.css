@@ -23,12 +23,12 @@ body {
 .dropdown,
 .save {
 	margin-left: 1000px;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 }
 .mainB {
 	background-color: white;
 	/* color: #f29909; */
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 }
 .dropdown {
@@ -36,13 +36,13 @@ body {
 	color: black;
 }
 .singIn {
-	font-family: 'Indie Flower', cursive;
+  font-family: 'Alata', sans-serif;
 }
 .dropdown-item,
 .validate,
 .text {
 	color: black;
-	font-family: 'Indie Flower', cursive;
+  font-family: 'Alata', sans-serif;
 }
 
 .singup {
@@ -54,7 +54,13 @@ body {
 	height: 25px;
 	font-size: 15px;
 }
-
+#email-input,
+#password-input{
+  margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-size: 15px;
+}
 .submit {
 	margin-left: 650px;
 }
@@ -67,18 +73,18 @@ body {
 .text2 {
 	font-size: 25px;
 	color: white;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	margin-left: 350px;
 }
 .word {
 	margin-left: 350px;
 	width: 550px;
 	height: 25px;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 }
 #myList {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 }
 #myList,
@@ -90,25 +96,45 @@ body {
 	float: right;
 }
 
+.submit{
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+
+.singUp
+{
+  margin-left: 550px;
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+#login-btn{
+  margin-left: 550px;
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+#search1{
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
 .mainS {
 	margin-right: 230px;
 	float: right;
 	background-color: white;
 	/* color: #f29909; */
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 }
 
 .card {
 	background-color: white;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 	margin-top: 55px;
 }
 
 .saveA {
 	background-color: white;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Alata', sans-serif;
 	font-size: 15px;
 	float: right;
 	margin-left: 25px;
