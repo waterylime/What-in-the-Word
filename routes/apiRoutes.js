@@ -42,7 +42,7 @@ module.exports = function(app) {
     }
   });
 
-  app.post("/api/words", function(req, res) {
+  app.post("/api/dashboard", function(req, res) {
     if (req.user) {
       db.Word.create({
         name: req.body.name,
@@ -59,7 +59,7 @@ module.exports = function(app) {
     }
   });
 
-  app.delete("/api/words/:id", function(req, res) {
+  app.delete("/api/dashboard/:id", function(req, res) {
     if (req.user) {
       db.Word.destroy({
         where: { id: req.params.id }
