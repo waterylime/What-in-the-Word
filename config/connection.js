@@ -1,5 +1,5 @@
 require('dotenv').config();
-let connection;
+let connection; 
 if (process.env.JAWSDB_URL) {
 	connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -7,8 +7,8 @@ if (process.env.JAWSDB_URL) {
 		host: 'localhost',
 		port: 3306,
 		user: process.env.SQL_USER,
-		password: process.env.SQL_PASS,
-		database: 'images_db'
+		password: Sootball12
+		database: 'words1_db'
 	});
 }
 connection.connect(function(err) {
