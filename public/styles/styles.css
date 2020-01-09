@@ -1,59 +1,88 @@
-/*home page*/
-body.home {
-	background-image: url(../images/background.png);
-	background-size: 1540px 750px;
-	background-repeat:no-repeat;
+.list-group-item {
+	line-height: 2.5;
+}
+body {
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 24%, rgba(29, 189, 161, 1) 63%);
 }
 
-header {
-    top: 0;
-    left: 0;
-    right: 0;
-	height: 50px;
-	box-shadow: 0 0 15px 0 rgb(71, 45, 218);
+.title {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 75px;
+	color: #f29909;
 }
-header li {
-	float: right;
-	margin-right: 30px;
-	list-style-type: none;
+#title {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 75px;
+	color: #f29909;
 }
-header li a, .member-name {
-	text-decoration: none;
-	display: inline-block;
-	font-family: 'Nova Mono', monospace;
-	font-size: 16px;
-	padding-top: 10px;
-	color: white;
+.collapsible,
+.dropdown,
+.save {
+	margin-left: 1000px;
+	font-family: 'Alata', sans-serif;
+}
+.mainB {
+	background-color: white;
+	/* color: #f29909; */
+	font-family: 'Alata', sans-serif;
+	font-size: 15px;
+
 }
 header li a:hover {
 	color: blue;
 }
-.title {
-	font-family: 'Fredericka the Great', cursive;
-	font-size: 75px;
-  
-.word {
-	margin-left: 250px;
-	width: 400px;
-	height: 40px;
-	font-family: 'Acme', sans-serif;
-	font-size: 18px;	
+
+.singIn {
+  font-family: 'Alata', sans-serif;
 }
-#myList {
-	font-family: 'Acme', sans-serif;
-	font-size: 18px;
-	height: 45px;
+.dropdown-item,
+.validate,
+.text {
+	color: black;
+  font-family: 'Alata', sans-serif;
+
 }
 
 .word:focus {
 	box-shadow: 0 0 5px 5px hsl(64, 94%, 70%); 
 }
 
-#myList:focus {
-	box-shadow: 0 0 5px 5px hsl(64, 94%, 70%); 
-	
+#email-input,
+#password-input{
+  margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-size: 15px;
 }
-.search-wrapper {
+.submit {
+	margin-left: 650px;
+}
+.text {
+	margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-size: 15px;
+}
+.text2 {
+	font-size: 25px;
+	color: white;
+	font-family: 'Alata', sans-serif;
+	margin-left: 350px;
+}
+.word {
+	margin-left: 350px;
+	width: 550px;
+	height: 25px;
+	font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+#myList {
+	font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+#myList,
+#input_text {
+
 	display: inline-block;
 }
 .button {
@@ -74,17 +103,50 @@ header li a:hover {
 	box-shadow: 0 0 5px 5px rgb(66, 35, 243);
 }
 
-.image {
-	float: right;
-	margin-right: 250px;
+
+.submit{
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
 }
 
-/*login page */
+.singUp
+{
+  margin-left: 550px;
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+#login-btn{
+  margin-left: 550px;
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+#search1{
+  font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
+.mainS {
+	margin-right: 230px;
+	float: right;
+	background-color: white;
+	/* color: #f29909; */
+	font-family: 'Alata', sans-serif;
+	font-size: 15px;
+}
 
-body.login {
-	background-image: url(../images/login.jpg);
-	background-size: 1540px 750px;
-	background-repeat:no-repeat;
+.card {
+	background-color: white;
+	font-family: 'Alata', sans-serif;
+	font-size: 15px;
+	margin-top: 55px;
+}
+
+.saveA {
+	background-color: white;
+	font-family: 'Alata', sans-serif;
+	font-size: 15px;
+	float: right;
+	margin-left: 25px;
+
 }
 h4 {
 	text-align: center;
