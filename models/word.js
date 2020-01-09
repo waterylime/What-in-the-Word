@@ -2,10 +2,9 @@ module.exports = function(sequelize, DataTypes) {
   var Word = sequelize.define("Word", {
     name: {
       type: DataTypes.STRING,
-      validate: {
-        allowNull: false
-      }
+      allowNull: false
     },
+    language: DataTypes.TEXT,
     description: DataTypes.TEXT,
     image: DataTypes.STRING(1000)
   });

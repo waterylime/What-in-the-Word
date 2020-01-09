@@ -21,7 +21,8 @@ $(document).ready(function() {
       email: email,
       password: password
     })
-      .then(function() {
+      .then(function(res) {
+        localStorage.setItem("id", res.id);
         window.location.replace("/dashboard");
       })
       .catch(function(err) {

@@ -3,6 +3,7 @@ var passport = require("../config/passport");
 
 module.exports = function(app) {
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
+    console.log(req.user.id);
     res.json(req.user);
   });
 
@@ -30,7 +31,7 @@ module.exports = function(app) {
     } else {
       db.Word.findAll({
         where: {
-          id: req.user.id
+          UserId: req.user.id
         }
       })
         .then(function(data) {
@@ -42,24 +43,25 @@ module.exports = function(app) {
     }
   });
 
-  app.post("/api/words", function(req, res) {
+  app.post("/api/dashboard", function(req, res) {
     if (req.user) {
       db.Word.create({
         name: req.body.name,
         language: req.body.language,
         description: req.body.description,
-        image: req.body.image
+        image: req.body.image,
+        UserId: req.body.UserId
       })
         .then(function(response) {
           res.json(response);
         })
         .catch(function(err) {
-          res.status(401).json(err);
+          console.log(err);
         });
     }
   });
 
-  app.delete("/api/words/:id", function(req, res) {
+  app.delete("/api/dashboard/:id", function(req, res) {
     if (req.user) {
       db.Word.destroy({
         where: { id: req.params.id }
