@@ -11,6 +11,7 @@ $(document).ready(function() {
       return spanish();
     }
   });
+​
   function japanese(query) {
     var query = $("#input_text").val();
     var queryURL =
@@ -21,8 +22,37 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(response) {
       console.log(response);
+      var wordDiv = $("<div>").addClass("cardDiv");
+      var titleDiv = $("<div>").addClass("titleDiv");
+      var speakerButton = $("<button>").addClass("fas fa-volume-up");
+      speakerButton.attr("id", "speaker");
+      var pOne = $("<p>").text(response.data[0].japanese[0].word);
+      pOne.addClass("card-title");
+      titleDiv.append(pOne, speakerButton);
+      var pTwo = $("<p>").text(
+        response.data[0].senses[0].english_definitions[0]
+      );
+      wordDiv.append(titleDiv, pTwo);
+      $(".card").prepend(wordDiv);
+      var query = $("#input_text").val();
+      var queryUrl1 =
+        "https://www.googleapis.com/customsearch/v1?q=" +
+        encodeURI(query) +
+        "&cx=008178743786087981107:hpgckvpylnl&searchType=image&key=AIzaSyDXVQjXJ6f75Uw8GzUsbFCMh2oqzge56TQ";
+      console.log(queryUrl1);
+      $.ajax({
+        url: queryUrl1,
+        method: "GET"
+      }).then(function(res) {
+        console.log(res);
+        var image = $("<img>").attr("src", res.items[0].link);
+        console.log(image);
+        wordDiv.append(image);
+        $(".card").prepend(wordDiv);
+      });
     });
   }
+​
   function french(query) {
     var query = $("#input_text").val();
     var queryURL =
@@ -35,8 +65,35 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(response) {
       console.log(response);
+      var wordDiv = $("<div>").addClass("cardDiv");
+      var titleDiv = $("<div>").addClass("titleDiv");
+      var speakerButton = $("<button>").addClass("fas fa-volume-up");
+      speakerButton.attr("id", "speaker");
+      var pOne = $("<p>").text(response[0].meta.id);
+      pOne.addClass("card-title");
+      titleDiv.append(pOne, speakerButton);
+      var pTwo = $("<p>").text(response[0].shortdef[0]);
+      wordDiv.append(titleDiv, pTwo);
+      $(".card").prepend(wordDiv);
+      var query = $("#input_text").val();
+      var queryUrl1 =
+        "https://www.googleapis.com/customsearch/v1?q=" +
+        encodeURI(query) +
+        "&cx=008178743786087981107:hpgckvpylnl&searchType=image&key=AIzaSyDXVQjXJ6f75Uw8GzUsbFCMh2oqzge56TQ";
+      console.log(queryUrl1);
+      $.ajax({
+        url: queryUrl1,
+        method: "GET"
+      }).then(function(res) {
+        console.log(res);
+        var image = $("<img>").attr("src", res.items[0].link);
+        console.log(image);
+        wordDiv.append(image);
+        $(".card").prepend(wordDiv);
+      });
     });
   }
+​
   function spanish(query) {
     var query = $("#input_text").val();
     var queryURL =
@@ -48,45 +105,52 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(response) {
       console.log(response);
+      var wordDiv = $("<div>").addClass("cardDiv");
+      var titleDiv = $("<div>").addClass("titleDiv");
+      var speakerButton = $("<button>").addClass("fas fa-volume-up");
+      speakerButton.attr("id", "speaker");
+      var pOne = $("<p>").text(response[0].meta.id);
+      pOne.addClass("card-title");
+      titleDiv.append(pOne, speakerButton);
+      var pTwo = $("<p>").text(response[0].shortdef[0]);
+      wordDiv.append(titleDiv, pTwo);
+      $(".card").prepend(wordDiv);
+      var query = $("#input_text").val();
+      var queryUrl1 =
+        "https://www.googleapis.com/customsearch/v1?q=" +
+        encodeURI(query) +
+        "&cx=008178743786087981107:hpgckvpylnl&searchType=image&key=AIzaSyDXVQjXJ6f75Uw8GzUsbFCMh2oqzge56TQ";
+      console.log(queryUrl1);
+      $.ajax({
+        url: queryUrl1,
+        method: "GET"
+      }).then(function(res) {
+        console.log(res);
+        var image = $("<img>").attr("src", res.items[0].link);
+        console.log(image);
+        wordDiv.append(image);
+        $(".card").prepend(wordDiv);
+      });
     });
   }
-});
-
-
-var artyom = new Artyom();
-function startArtyom(){
+​
+  var artyom = new Artyom();
+  function startArtyom() {
     artyom.initialize({
-        language: "en-GB", 
-        continuous: false, 
-        debug: true, 
-        listen: true
-    })
-
-};
-
-// function say(){
-//     artyom.say();
-// };
-
-$(".speaker").click(function(){
-  // let word = String($(this).text())
-  let word = String($(this).parents(".card-content").siblings(".card-image").children(".card-title").text())
-  console.log(word);
-  console.log("clicked");
-  startArtyom();
-  artyom.say(word);
-  // say();
-
-});
-
-$(".mainB").click(function(){
-var query = $("#input_text").val();
-console.log(query)
-var queryUrl = "https://www.googleapis.com/customsearch/v1?q=" + query + "&cx=008178743786087981107:hpgckvpylnl&searchType=image&key=AIzaSyDXVQjXJ6f75Uw8GzUsbFCMh2oqzge56TQ"
-$.ajax({
-    url:queryUrl,
-    method: "GET",
-}).then(function(response) {
-    console.log(response.items[0].link)
-});
+      language: "en-GB",
+      continuous: false,
+      debug: true,
+      listen: true
+    });
+  }
+​
+  $(".card").on("click" , "#speaker", function(){
+    console.log("clicked");
+    var word = String($(this).parent(".titleDiv").children(".card-title").text());
+    console.log(word);
+    console.log("clicked");
+    startArtyom();
+    artyom.say(word);
+  
+  });
 });
