@@ -1,3 +1,5 @@
+// Api Functions
+
 $(document).ready(function() {
   $("#search1").on("click", function(event) {
     event.preventDefault();
