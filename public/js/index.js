@@ -1,3 +1,5 @@
+// Api Functions
+
 $(document).ready(function() {
   $("#search1").on("click", function(event) {
     event.preventDefault();
@@ -11,7 +13,11 @@ $(document).ready(function() {
       return spanish();
     }
   });
+<<<<<<< HEAD
 
+=======
+​
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12
   function japanese(query) {
     var query = $("#input_text").val();
     var queryURL =
@@ -48,11 +54,19 @@ $(document).ready(function() {
         var image = $("<img>").attr("src", res.items[0].link);
         console.log(image);
         wordDiv.append(image);
+<<<<<<< HEAD
         $(".card").append(wordDiv);
       });
     });
   }
 
+=======
+        $(".card").prepend(wordDiv);
+      });
+    });
+  }
+​
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12
   function french(query) {
     var query = $("#input_text").val();
     var queryURL =
@@ -89,11 +103,19 @@ $(document).ready(function() {
         var image = $("<img>").attr("src", res.items[0].link);
         console.log(image);
         wordDiv.append(image);
+<<<<<<< HEAD
         $(".card").append(wordDiv);
       });
     });
   }
 
+=======
+        $(".card").prepend(wordDiv);
+      });
+    });
+  }
+​
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12
   function spanish(query) {
     var query = $("#input_text").val();
     var queryURL =
@@ -129,11 +151,20 @@ $(document).ready(function() {
         var image = $("<img>").attr("src", res.items[0].link);
         console.log(image);
         wordDiv.append(image);
+<<<<<<< HEAD
         $(".card").append(wordDiv);
       });
     });
   }
 
+=======
+        $(".card").prepend(wordDiv);
+      });
+    });
+  }
+​
+  var artyom = new Artyom();
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12
   function startArtyom() {
     artyom.initialize({
       language: "en-GB",
@@ -142,6 +173,7 @@ $(document).ready(function() {
       listen: true
     });
   }
+<<<<<<< HEAD
   var artyom = new Artyom();
   $(".card").on("click", "#speaker", function() {
     console.log("clicked button");
@@ -151,9 +183,21 @@ $(document).ready(function() {
         .children(".card-title")
         .text()
     );
+=======
+​
+  $(".card").on("click" , "#speaker", function(){
+    console.log("clicked");
+    var word = String($(this).parent(".titleDiv").children(".card-title").text());
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12
     console.log(word);
     console.log("clicked");
     startArtyom();
     artyom.say(word);
+<<<<<<< HEAD
   });
 });
+=======
+  
+  });
+});
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12

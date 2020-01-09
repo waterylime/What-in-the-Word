@@ -11,6 +11,10 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
+<<<<<<< HEAD
+=======
+
+>>>>>>> 189c5dea8b8c2a71129ebd8021a56f3cd15c1a12
 app.use(
   session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
 );
